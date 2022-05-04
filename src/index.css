@@ -14,6 +14,9 @@ code {
 * {
   box-sizing: border-box;
 }
+.is-hidden {
+  visibility: hidden !important;
+}
 #root {
   display: flex;
   justify-content: center;
@@ -32,13 +35,127 @@ code {
 .dots {
   height: 15px;
   width: 15px;
-  border: 1px solid #0f1d1d;
+  background-color: white;
+  border: 1px solid olivedrab;
 }
 
 .snake {
-  background: white;
+  background: olivedrab;
 }
 
-.food {
-  background: pink;
+.apple {
+  background: red;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: bold;
+}
+
+.navigation-item {
+  padding: 5px 16px 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-item-number-container {
+  display: flex;
+  align-items: center;
+  margin-left: 4px;
+}
+
+.num-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.difficulty-number {
+  margin-right: 8px;
+}
+
+.difficulty-button {
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  border: 8px solid olivedrab;
+  margin: 8px;
+}
+.difficulty-up {
+  margin-top: 4px;
+  border-bottom: 8px solid white;
+  transition: all ease 0.5s;
+}
+.difficulty-up:hover {
+  border-bottom: 8px solid limegreen;
+}
+.difficulty-up:active {
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+
+.difficulty-down {
+  margin-bottom: 4px;
+  border-top: 8px solid white;
+  transition: all ease 0.5s;
+}
+.difficulty-down:hover {
+  border-top: 8px solid limegreen;
+}
+.difficulty-down:active {
+  transform: scale(0.8);
+  opacity: 0.8;
+}
+
+.footer {
+  padding: 30px 0;
+}
+
+.btn {
+  border: 0;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  width: 50%;
+  font-weight: bold;
+  padding: 8px 16px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: all ease 0.2s;
+}
+
+.btn-init,
+.btn-suspended {
+  background: #2fcb70;
+}
+
+.btn-playing {
+  background: #ffd166;
+}
+
+.btn-gameover {
+  background: #ef476f;
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:active {
+  box-shadow: 0px 0px 0px 0px;
+}
+
+.btn-init:active,
+.btn-suspended:active {
+  background: #20bd60;
+}
+
+.btn-playing:active {
+  background: #eabc5c;
+}
+
+.btn-gameover:active {
+  background: #de4064;
 }
