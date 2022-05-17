@@ -5,7 +5,7 @@ export const initPosition = { x: 17, y: 17 };
 export const initValue = initFields(fieldSize, initPosition);
 export const defaultInterval = 100;
 export const defaultDifficulty = 3;
-export const Difficulty = [800, 500, 100, 50, 10];
+export const Difficulty = [500, 300, 100, 50, 10];
 
 export const GameStatus = {
   init: "initial",
